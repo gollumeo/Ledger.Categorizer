@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ledger.Categorizer.Application\Ledger.Categorizer.Application.csproj" />
+    <ProjectReference Include="..\Ledger.Categorizer.Presentation\Ledger.Categorizer.Presentation.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

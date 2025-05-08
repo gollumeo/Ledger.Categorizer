@@ -25,7 +25,6 @@ project.fragment.lock.json
 
 ## User-specific files
 *.suo
-*.user
 *.userosscache
 *.sln.docstates
 
