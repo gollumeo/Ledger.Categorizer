@@ -5,5 +5,5 @@ namespace Ledger.Categorizer.Application.Contracts;
 
 public interface ICategorizeTransaction
 {
-    Category Categorize(Transaction transaction);
+    Category Execute(Transaction transaction);
 }
