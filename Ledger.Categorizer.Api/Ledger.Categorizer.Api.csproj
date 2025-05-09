@@ -1,14 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <ItemGroup>
-    <ProjectReference Include="..\Ledger.Categorizer.Application\Ledger.Categorizer.Application.csproj" />
-    <ProjectReference Include="..\Ledger.Categorizer.Presentation\Ledger.Categorizer.Presentation.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Ledger.Categorizer.Application\Ledger.Categorizer.Application.csproj"/>
+        <ProjectReference Include="..\Ledger.Categorizer.Infrastructure\Ledger.Categorizer.Infrastructure.csproj"/>
+        <ProjectReference Include="..\Ledger.Categorizer.Presentation\Ledger.Categorizer.Presentation.csproj"/>
+    </ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
 
 </Project>
