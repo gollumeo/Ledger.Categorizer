@@ -10,7 +10,7 @@ public class DefaultCategorizeTransaction : ICategorizeTransaction
     private static readonly string[] TransportKeywords = ["uber", "taxi"];
 
 
-    public Category Categorize(Transaction transaction)
+    public Category Execute(Transaction transaction)
     {
         if (IsFoodDelivery(transaction)) return Category.FoodDelivery;
 
