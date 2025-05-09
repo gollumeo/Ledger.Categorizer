@@ -4,7 +4,7 @@ using Ledger.Categorizer.Presentation.Dto;
 
 namespace Ledger.Categorizer.Api.Http;
 
-public static class TransactionEndpoints
+public static class CategorizeEndpoints
 {
     public static void MapTransactionEndpoints(this IEndpointRouteBuilder app)
     {
