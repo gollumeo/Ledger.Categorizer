@@ -86,13 +86,12 @@ To integrate it manually:
 
 ---
 
-## 🛍 Roadmap
+## 📦 Integration Ready
 
-* [ ] Rule chaining & priority logic
-* [ ] Category confidence score
-* [ ] NuGet packaging
-* [ ] CLI demo interface
-* [ ] Web UI demo
+* [X] Self-contained
+* [X] No persistence required
+* [X] Plug & play via DI
+* [X] Fully tested and extensible
 
 ---
 
