@@ -1,5 +1,5 @@
-﻿using Ledger.Categorizer.Application.Contracts;
-using Ledger.Categorizer.Domain.Entities;
+﻿using Ledger.Categorizer.Application.Commands;
+using Ledger.Categorizer.Application.Handlers;
 using Ledger.Categorizer.Presentation.Dto;
 
 namespace Ledger.Categorizer.Api.Http;
@@ -8,11 +8,15 @@ public static class CategorizeEndpoints
 {
     public static void MapTransactionEndpoints(this IEndpointRouteBuilder app)
     {
-        app.MapPost("/categorize", (CategorizeRequest request, ICategorizeTransaction service) =>
+        app.MapPost("/categorize", (CategorizeRequest request, HandleTransactionCategorization categorizeTransaction) =>
         {
-            var transaction = new Transaction(request.Description, request.Amount, request.Date);
+            var command = new CategorizeTransactionCommand(
+                request.Description,
+                request.Amount,
+                request.Date
+            );
 
-            var category = service.Categorize(transaction);
+            var category = categorizeTransaction.Execute(command);
 
             var response = new CategorizeResponse
             {
